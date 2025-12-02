@@ -1,175 +1,176 @@
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
-        Questao[] questao = new Questao[15];
+        List<Questao> questao = new ArrayList<>();
 
         int acertos = 0;
         float porcentagem = 0;
 
-        questao[0] = new Questao(
-                "1. O que é hardware?",
-                "A) Programas de computador",
-                "B) Parte física do computador",
-                "C) Aplicativos móveis",
-                "D) Sistema operacional",
-                "E) Internet",
-                "B"
-        );
+        Questao q1 = new Questao();
+        q1.setPergunta("1. O que é hardware?");
+        q1.setOpcaoA("A) Programas de computador");
+        q1.setOpcaoB("B) Parte física do computador");
+        q1.setOpcaoC("C) Aplicativos móveis");
+        q1.setOpcaoD("D) Sistema operacional");
+        q1.setOpcaoE("E) Internet");
+        q1.setCorreta("B");
+        questao.add(q1);
 
-        questao[1] = new Questao(
-                "2. Qual é a função principal do sistema operacional?",
-                "A) Criar documentos",
-                "B) Proteger contra vírus",
-                "C) Gerenciar recursos do computador",
-                "D) Aumentar a velocidade da internet",
-                "E) Reproduzir vídeos",
-                "C"
-        );
+        Questao q2 = new Questao();
+        q2.setPergunta("2. Qual é a função principal do sistema operacional?");
+        q2.setOpcaoA("A) Criar documentos");
+        q2.setOpcaoB("B) Proteger contra vírus");
+        q2.setOpcaoC("C) Gerenciar recursos do computador");
+        q2.setOpcaoD("D) Aumentar a velocidade da internet");
+        q2.setOpcaoE("E) Reproduzir vídeos");
+        q2.setCorreta("C");
+        questao.add(q2);
 
-        questao[2] = new Questao(
-                "3. O que significa a sigla CPU?",
-                "A) Central de Programas Úteis",
-                "B) Computador Pessoal Único",
-                "C) Processador de Dados",
-                "D) Unidade de Controle de Programas",
-                "E) Unidade Central de Processamento",
-                "E"
-        );
+        Questao q3 = new Questao();
+        q3.setPergunta("3. O que significa a sigla CPU?");
+        q3.setOpcaoA("A) Central de Programas Úteis");
+        q3.setOpcaoB("B) Computador Pessoal Único");
+        q3.setOpcaoC("C) Processador de Dados");
+        q3.setOpcaoD("D) Unidade de Controle de Programas");
+        q3.setOpcaoE("E) Unidade Central de Processamento");
+        q3.setCorreta("E");
+        questao.add(q3);
 
-        questao[3] = new Questao(
-                "4. Qual dispositivo é usado para entrada de dados?",
-                "A) Monitor",
-                "B) Impressora",
-                "C) Teclado",
-                "D) Caixa de som",
-                "E) Pen drive",
-                "C"
-        );
+        Questao q4 = new Questao();
+        q4.setPergunta("4. Qual dispositivo é usado para entrada de dados?");
+        q4.setOpcaoA("A) Monitor");
+        q4.setOpcaoB("B) Impressora");
+        q4.setOpcaoC("C) Teclado");
+        q4.setOpcaoD("D) Caixa de som");
+        q4.setOpcaoE("E) Pen drive");
+        q4.setCorreta("C");
+        questao.add(q4);
 
-        questao[4] = new Questao(
-                "5. Qual é a função de um antivírus?",
-                "A) Proteger contra softwares maliciosos",
-                "B) Criar senhas seguras",
-                "C) Aumentar o desempenho do computador",
-                "D) Atualizar o sistema operacional",
-                "E) Melhorar a qualidade da imagem",
-                "A"
-        );
+        Questao q5 = new Questao();
+        q5.setPergunta("5. Qual é a função de um antivírus?");
+        q5.setOpcaoA("A) Proteger contra softwares maliciosos");
+        q5.setOpcaoB("B) Criar senhas seguras");
+        q5.setOpcaoC("C) Aumentar o desempenho do computador");
+        q5.setOpcaoD("D) Atualizar o sistema operacional");
+        q5.setOpcaoE("E) Melhorar a qualidade da imagem");
+        q5.setCorreta("A");
+        questao.add(q5);
 
-        questao[5] = new Questao(
-                "6. O que é software?",
-                "A) Parte física do computador",
-                "B) Conjunto de cabos e conexões",
-                "C) Programas e aplicativos",
-                "D) Equipamentos de rede",
-                "E) Componentes eletrônicos",
-                "C"
-        );
+        Questao q6 = new Questao();
+        q6.setPergunta("6. O que é software?");
+        q6.setOpcaoA("A) Parte física do computador");
+        q6.setOpcaoB("B) Conjunto de cabos e conexões");
+        q6.setOpcaoC("C) Programas e aplicativos");
+        q6.setOpcaoD("D) Equipamentos de rede");
+        q6.setOpcaoE("E) Componentes eletrônicos");
+        q6.setCorreta("C");
+        questao.add(q6);
 
-        questao[6] = new Questao(
-                "7. Qual é a unidade de medida de armazenamento?",
-                "A) Hertz",
-                "B) Pixel",
-                "C) Volt",
-                "D) Byte",
-                "E) Ampere",
-                "D"
-        );
+        Questao q7 = new Questao();
+        q7.setPergunta("7. Qual é a unidade de medida de armazenamento?");
+        q7.setOpcaoA("A) Hertz");
+        q7.setOpcaoB("B) Pixel");
+        q7.setOpcaoC("C) Volt");
+        q7.setOpcaoD("D) Byte");
+        q7.setOpcaoE("E) Ampere");
+        q7.setCorreta("D");
+        questao.add(q7);
 
-        questao[7] = new Questao(
-                "8. O que é a nuvem (cloud computing)?",
-                "A) Um tipo de vírus",
-                "B) Um sistema de refrigeração",
-                "C) Armazenamento remoto de dados",
-                "D) Um navegador de internet",
-                "E) Um tipo de cabo de rede",
-                "C"
-        );
+        Questao q8 = new Questao();
+        q8.setPergunta("8. O que é a nuvem ?");
+        q8.setOpcaoA("A) Um tipo de vírus");
+        q8.setOpcaoB("B) Um sistema de refrigeração");
+        q8.setOpcaoC("C) Armazenamento remoto de dados");
+        q8.setOpcaoD("D) Um navegador de internet");
+        q8.setOpcaoE("E) Um tipo de cabo de rede");
+        q8.setCorreta("C");
+        questao.add(q8);
 
-        questao[8] = new Questao(
-                "9. Qual é a função do navegador de internet?",
-                "A) Acessar sites e conteúdos online",
-                "B) Proteger contra hackers",
-                "C) Criar páginas web",
-                "D) Editar imagens",
-                "E) Gerenciar arquivos locais",
-                "A"
-        );
+        Questao q9 = new Questao();
+        q9.setPergunta("9. Qual é a função do navegador de internet?");
+        q9.setOpcaoA("A) Acessar sites e conteúdos online");
+        q9.setOpcaoB("B) Proteger contra hackers");
+        q9.setOpcaoC("C) Criar páginas web");
+        q9.setOpcaoD("D) Editar imagens");
+        q9.setOpcaoE("E) Gerenciar arquivos locais");
+        q9.setCorreta("A");
+        questao.add(q9);
 
-        questao[9] = new Questao(
-                "10. O que é Wi-Fi?",
-                "A) Um tipo de cabo de rede",
-                "B) Um programa de edição",
-                "C) Conexão sem fio à internet",
-                "D) Um antivírus",
-                "E) Um sistema operacional",
-                "C"
-        );
+        Questao q10 = new Questao();
+        q10.setPergunta("10. O que é Wi-Fi?");
+        q10.setOpcaoA("A) Um tipo de cabo de rede");
+        q10.setOpcaoB("B) Um programa de edição");
+        q10.setOpcaoC("C) Conexão sem fio à internet");
+        q10.setOpcaoD("D) Um antivírus");
+        q10.setOpcaoE("E) Um sistema operacional");
+        q10.setCorreta("C");
+        questao.add(q10);
 
-        questao[10] = new Questao(
-                "11. Qual é a função de uma impressora?",
-                "A) Digitalizar documentos",
-                "B) Exibir imagens",
-                "C) Reproduzir áudio",
-                "D) Imprimir documentos",
-                "E) Armazenar arquivos",
-                "D"
-        );
+        Questao q11 = new Questao();
+        q11.setPergunta("11. Qual é a função de uma impressora?");
+        q11.setOpcaoA("A) Digitalizar documentos");
+        q11.setOpcaoB("B) Exibir imagens");
+        q11.setOpcaoC("C) Reproduzir áudio");
+        q11.setOpcaoD("D) Imprimir documentos");
+        q11.setOpcaoE("E) Armazenar arquivos");
+        q11.setCorreta("D");
+        questao.add(q11);
 
-        questao[11] = new Questao(
-                "12. Qual dos itens abaixo é um exemplo de software?",
-                "A) Mouse",
-                "B) Windows",
-                "C) Monitor",
-                "D) Teclado",
-                "E) Placa-mãe",
-                "B"
-        );
+        Questao q12 = new Questao();
+        q12.setPergunta("12. Qual dos itens abaixo é um exemplo de software?");
+        q12.setOpcaoA("A) Mouse");
+        q12.setOpcaoB("B) Windows");
+        q12.setOpcaoC("C) Monitor");
+        q12.setOpcaoD("D) Teclado");
+        q12.setOpcaoE("E) Placa-mãe");
+        q12.setCorreta("B");
+        questao.add(q12);
 
-        questao[12] = new Questao(
-                "13. O que é um arquivo PDF?",
-                "A) Um tipo de imagem",
-                "B) Um vídeo compactado",
-                "C) Um formato de documento portátil",
-                "D) Um programa de edição",
-                "E) Um sistema de segurança",
-                "C"
-        );
+        Questao q13 = new Questao();
+        q13.setPergunta("13. O que é um arquivo PDF?");
+        q13.setOpcaoA("A) Um tipo de imagem");
+        q13.setOpcaoB("B) Um vídeo compactado");
+        q13.setOpcaoC("C) Um formato de documento portátil");
+        q13.setOpcaoD("D) Um programa de edição");
+        q13.setOpcaoE("E) Um sistema de segurança");
+        q13.setCorreta("C");
+        questao.add(q13);
 
-        questao[13] = new Questao(
-                "14. Qual é a função do Excel?",
-                "A) Criar apresentações",
-                "B) Editar vídeos",
-                "C) Navegar na internet",
-                "D) Criar planilhas e cálculos",
-                "E) Reproduzir músicas",
-                "D"
-        );
+        Questao q14 = new Questao();
+        q14.setPergunta("14. Qual é a função do Excel?");
+        q14.setOpcaoA("A) Criar apresentações");
+        q14.setOpcaoB("B) Editar vídeos");
+        q14.setOpcaoC("C) Navegar na internet");
+        q14.setOpcaoD("D) Criar planilhas e cálculos");
+        q14.setOpcaoE("E) Reproduzir músicas");
+        q14.setCorreta("D");
+        questao.add(q14);
 
-        questao[14] = new Questao(
-                "15. O que é um pendrive?",
-                "A) Um tipo de software",
-                "B) Um antivírus portátil",
-                "C) Um dispositivo de armazenamento",
-                "D) Um programa de backup",
-                "E) Um cabo de rede",
-                "C"
-        );
+        Questao q15 = new Questao();
+        q15.setPergunta("15. O que é um pendrive?");
+        q15.setOpcaoA("A) Um tipo de software");
+        q15.setOpcaoB("B) Um antivírus portátil");
+        q15.setOpcaoC("C) Um dispositivo de armazenamento");
+        q15.setOpcaoD("D) Um programa de backup");
+        q15.setOpcaoE("E) Um cabo de rede");
+        q15.setCorreta("C");
+        questao.add(q15);
 
-
-        for ( int i = 0; i < questao.length; i++){
-           questao[i].escrevaQuestao();
-           String resposta = questao[i].leiaResposta();
-            if (questao[i].isCorreta(resposta)){
-                acertos ++;
-            }
+        for (Questao q: questao){
+            q.escrevaQuestao();
+            String resposta = q.leiaResposta();
+            if (q.isCorreta(resposta)) acertos++;
         }
 
         porcentagem = (float) (acertos * 100) / 15;
 
         System.out.println("Acertos: "+ acertos + " de 15");
         System.out.printf("Porcentagem de acertos :  %.2f%%%n",porcentagem);
+
 
 
 
